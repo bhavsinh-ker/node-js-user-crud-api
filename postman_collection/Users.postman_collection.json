@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "83714df9-d0f6-4936-bd86-c8f2491a7cf6",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Lorem",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ipsome",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text"
+						},
+						{
+							"key": "user_status",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "hi this is test address",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "29",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "9873654312125",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Ipsome",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "test@test.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_status",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "hi this is test address",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "29",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone_number",
+							"value": "9873654312125",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "61c1764362f6440e6036faee",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "61c1764362f6440e6036faee",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWMwMjFhMzdlZThkNmJmN2VkMmM0ZDMiLCJpYXQiOjE2NDAyNDA3MjYsImV4cCI6MTY0MDI0NDMyNn0.Fbrg_tbJ-82fNWoDOWB9uFIZhTQXAs7lFLyrHLQvdao",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
